@@ -72,7 +72,7 @@ const Footer = () => {
   return (
     <footer className="border-t backdrop-blur-xl border-white/10 bg-black/20">
       <div className="max-w-[1400px] mx-auto px-4 py-6">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col justify-between items-center space-y-6 md:flex-row md:space-y-0">
           {/* Logo */}
           <Link href="/" className="flex gap-2 items-center">
             <Image
@@ -88,12 +88,12 @@ const Footer = () => {
           </Link>
 
           {/* Navigation Links */}
-          <nav className="flex gap-8 items-center">
+          <nav className="flex flex-wrap gap-4 justify-center items-center md:gap-8">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
-                className="text-white transition-colors hover:text-pink-500 font-acme"
+                className="text-sm text-white transition-colors hover:text-pink-500 font-acme md:text-base"
               >
                 {link.name}
               </Link>

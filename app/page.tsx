@@ -1,19 +1,18 @@
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import NftCollection from "./components/NftCollection";
-import Roadmap from "./components/Roadmap";
-import Footer from "./components/Footer";
 import Lootbox from "./components/Lootbox";
-
+import Roadmap from "./components/Roadmap";
+import Tokenomics from "./components/Tokenomics";
+import Community from "./components/Community";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
       <Hero />
-      <Lootbox />
       <NftCollection />
+      <Lootbox />
+      <Tokenomics />
       <Roadmap />
-      <Footer />
+      <Community />
     </main>
   );
 }
